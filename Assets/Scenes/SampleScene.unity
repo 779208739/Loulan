@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 801800818}
   - component: {fileID: 801800817}
   - component: {fileID: 801800816}
+  - component: {fileID: 801800821}
   m_Layer: 0
   m_Name: Miss Lan
   m_TagString: Untagged
@@ -378,7 +379,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -475,6 +476,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &801800821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801800815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0feb921c643d14dbe8f3aead459cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  speed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  checkRadius: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  health: 0
+  isDead: 0
+  isGround: 0
+  isJump: 0
+  canJump: 0
+  JumpFX: {fileID: 0}
+  LandFX: {fileID: 0}
 --- !u!1 &1302776140
 GameObject:
   m_ObjectHideFlags: 0
