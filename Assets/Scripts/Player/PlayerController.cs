@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CheckInput();
+        CheckInput();
     }
 
     public void FixedUpdate()
@@ -50,8 +50,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
         }*/
         Movement();
-        //PhysicsCheck();
-        //Jump();
+        PhysicsCheck();
+        Jump();
     }
 
     void CheckInput()
@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
         if (canJump)
         {
             isJump = true;
-            //JumpFX.SetActive(true);
-            //JumpFX.transform.position = transform.position + new Vector3(0, -0.45f, 0);
+            JumpFX.SetActive(true);
+            JumpFX.transform.position = transform.position + new Vector3(0, -0.25f, 0);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             rb.gravityScale = 4;
             canJump = false;
@@ -89,11 +89,22 @@ public class PlayerController : MonoBehaviour
 
     void PhysicsCheck()
     {
-        //isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
+        isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
         if (isGround)
         {
             isJump = false;
             rb.gravityScale = 3;
         }
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
+
+    public void FallFX()
+    {
+        LandFX.SetActive(true);
+        LandFX.transform.position = transform.position + new Vector3(0, -0.5f, 0);
     }
 }
