@@ -15,9 +15,9 @@ TagManager:
   - 
   - Background
   - Platform
-  - 
-  - 
-  - 
+  - Player
+  - NPC
+  - FX
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 147013207
+    locked: 0
+  - name: Player
+    uniqueID: 3625841175
+    locked: 0
+  - name: NPC
+    uniqueID: 3093193473
     locked: 0
