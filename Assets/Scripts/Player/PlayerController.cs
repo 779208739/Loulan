@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -35,6 +36,29 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        if(SceneManager.GetActiveScene().buildIndex==2)
+        {
+            if(DoorToNext.doorswitch1)
+            {
+                this.GetComponent<Transform>().position = new Vector3(9f, -2.3f, 0f);
+            }
+            if(DoorToNext.doorswitch2)
+            {
+                this.GetComponent<Transform>().position = new Vector3(48.3f, -0.8f, 0f);
+            }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            if (DoorToNext.doorswitch1)
+            {
+                this.GetComponent<Transform>().position = new Vector3(9.19f, -2f, 0f);
+            }
+            if (DoorToNext.doorswitch2)
+            {
+                this.GetComponent<Transform>().position = new Vector3(42.52f, -1f, 0f);
+            }
+        }
+
     }
 
     // Update is called once per frame

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -669126121
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -8955879783151489632, guid: 5b5be65cbb2ace140af0d75afde7896d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7907815956465336742}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5d618c89fad7d074ebd871cd72f85765, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -163,24 +163,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7907815956465336742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d0feb921c643d14dbe8f3aead459cbb, type: 3}
+  m_Script: {fileID: 11500000, guid: dbfbf2dcb0ac77343874c372a83983e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  speed: 8
-  jumpForce: 16
-  groundCheck: {fileID: 7907815957215477516}
-  checkRadius: 0.17
+  speed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  checkRadius: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   health: 0
   isDead: 0
   isGround: 0
   isJump: 0
   canJump: 0
-  JumpFX: {fileID: 7907815958101561638}
-  LandFX: {fileID: 7907815957952306183}
+  JumpFX: {fileID: 0}
+  LandFX: {fileID: 0}
 --- !u!1 &7907815956556553927
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,14 +408,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -669126121
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a1b5458f3afab1942a45b479132b7709, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 0.625}
+  m_Size: {x: 2.5, y: 0.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -458,7 +458,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.5, y: 0.3125}
-    newSize: {x: 5, y: 0.625}
+    newSize: {x: 2.5, y: 0.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -550,7 +550,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -669126121
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b619e28f822f6e43bb84b2e3e0b2f4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

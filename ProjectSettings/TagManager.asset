@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LandFX
+  - door1
+  - door2
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - Player
   - NPC
   - FX
-  - 
-  - 
+  - BackgroundPic
+  - ladder
   - 
   - 
   - 
@@ -43,6 +46,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 147013207
+    locked: 0
+  - name: ladder
+    uniqueID: 16833631
     locked: 0
   - name: Player
     uniqueID: 3625841175
